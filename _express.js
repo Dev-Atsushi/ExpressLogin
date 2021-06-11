@@ -43,7 +43,7 @@ server.post("/login/api/createAccount", async (req, res) => {
         return res.send("<script>alert('Conta já existente!'); setTimeout(() => { window.location.href = '/' }, 1500)</script>");
     };
 
-    return res.redirect("/")
+    return res.redirect("/");
 });
 
 server.post("/login/api/loginAccount", async (req, res) => {
