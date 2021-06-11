@@ -4,13 +4,10 @@ require('dotenv').config({
 
 const express  = require("express");
 const server   = require('express')();
-const portHttp = require('http').Server(server);
-const io = require('socket.io')(portHttp);
 const SimplDB  = require('simpl.db');
 
 const db = new SimplDB();
 const Login = db.createCollection('login', {});
-const query = Login.get();
 
 server.use(express.static("public"));
 server.use(express.json());
@@ -23,16 +20,14 @@ server.use(express.urlencoded({
 server.get("/", (req, res) => {
     res.render("login", {
         db,
-        Login,
-        query
+        Login
     });
 });
 
 server.get("/register", (req, res) => {
     res.render('register', {
         db,
-        Login,
-        query
+        Login
     });
 });
 
@@ -61,10 +56,4 @@ server.post("/login/api/loginAccount", async (req, res) => {
     };
 });
 
-setInterval(() => {
-    io.emit('my-channel', {
-        message: 'Socket.IO - Atsushi'
-    });
-}, 3000);
-
-portHttp.listen(3000)
+server.listen(3000)
