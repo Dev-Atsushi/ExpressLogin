@@ -33,7 +33,7 @@ server.get("/register", (req, res) => {
 
 server.post("/login/api/createAccount", async (req, res) => {
     const query = Login.get(l => l.name === req.body.name && l.email === req.body.email);
-    if(query < 0) {
+    if(Object.keys(query) === 0) {
         Login.create({
             name: req.body.name,
             email: req.body.email,
