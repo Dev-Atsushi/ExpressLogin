@@ -11,7 +11,7 @@ server.use(express.urlencoded({
 
 server.use("/login/api", postRoute);
 
-server.get("/", async(req, res) => {
+server.get("/", (req, res) => {
     res.sendFile(__dirname + '/views/login.html');
 });
 
