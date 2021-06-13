@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Atsushi" />
+
+        <title>Atsushi ~ Register</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="/stylesheet/register.css" />
+    </head>
+    <body>
+        <nav>
+            <img class="nav-brand"
+            src="https://cdn.discordapp.com/avatars/852650555254767676/a_0c0c9c8dfbc5fa2745d6de16ca1b1dcd.gif?size=2048" type="image/gif" />
+
+            <ul>
+                <li><a href="/" class="login-a">Login</a></li>
+                <li><a href="/register"><button class="register-btn">Register</button></a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <div class="container">
+                <form role="form" action="/login/api/createAccount" method="POST">
+                    <h2>Register</h2>
+
+                    <div class="input-group">
+                        <label for="txtUserName">User Name</label>
+                        <input type="text" class="form-control" name="name" required />
+                    </div>
+                    <div class="input-group">
+                        <label for="txtPassword">E-mail</label>
+                        <input type="email" class="form-control" name="email" required />
+                    </div>
+                    <div class="input-group">
+                        <label for="txtPassword">Password</label>
+                        <input type="password" id="txtPassword" class="form-control" name="password" required />
+                        <button type="button" id="btnToggle" class="toggle"><i id="eyeIcon" class="fa fa-eye"></i></button>
+                    </div>
+                    <button class="btn btn-lg btn-primary btn-block" type="subimit">Register <i class="fa fa-sign-in"></i></button>
+                </form>
+            </div>
+        </main>
+
+        <script src="/script/passwordShow.js"></script>
+    </body>
+</html>

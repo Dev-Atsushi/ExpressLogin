@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    font: 14px/1 "Roboto", sans-serif;
+}
+
+nav {
+    background-color: #f9f9f9;
+    width: 100%;
+    height: 90px;
+    padding: 5px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.nav-brand {
+    border-radius: 50%;
+    width: 80px;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: right;
+    display: inline-flex;
+    float: right;
+    gap: 25px;
+    overflow: hidden;
+}
+
+nav ul li:first-child {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    padding-top: 26px;
+    padding-bottom: 45px;
+}
+
+nav ul li:last-child {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.login-a {
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    padding: 11px;
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+    transition: all .5s;
+}
+
+.login-a:hover {
+    cursor: pointer;
+    padding: 10px;
+}
+
+.register-btn {
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    font-size: 15px;
+    color: #fff;
+    background-color: #caf0c1;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    border: 0;
+    cursor: pointer;
+}
+
+main {
+    margin-top: 10rem;
+    width: 100%;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    height: 100%;
+}
+
+.container {
+    margin: 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+form {
+    border-radius: 5px;
+    background: #fff;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    border-left: 1px solid rgba(0, 0, 0, 0.08);
+    box-shadow: 0 3rem 5rem -2rem rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+    max-width: 380px;
+    padding: 15px 35px 45px;
+}
+
+form h2 {
+    font-size: 30px;
+    margin-top: 20px;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: #666;
+    margin-bottom: .75em;
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 1.25em;
+    position: relative;
+    width: 100%;
+    display: table;
+    border-collapse: separate;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.form-control {
+    position: relative;
+    z-index: 2;
+    float: left;
+    width: 100%;
+    margin-bottom: 0;
+    display: table-cell;
+}
+
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    -webkit-appearance: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1.25em;
+    height: auto;
+    padding: .5em;
+}
+
+input[type="password"]::-ms-reveal {
+    display: none;
+}
+
+.btn {
+    margin-top: 1.75em;
+    display: block;
+    width: 100%;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    touch-action: manipulation;
+    cursor: pointer;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent
+}
+
+.input-group {
+    position: relative;
+    width: 100%;
+
+}
+
+.toggle {
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    font-weight: 600;
+    position: absolute;
+    right: .45em;
+    top: 1.1em;
+    z-index: 9;
+}
+
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
