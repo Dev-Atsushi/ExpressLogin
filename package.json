@@ -2,9 +2,9 @@
   "name": "expresslogin",
   "version": "2.0.0",
   "description": "",
-  "main": "_express.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node _express.js"
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
