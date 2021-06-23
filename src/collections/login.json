@@ -3,5 +3,10 @@
     "name": "Atsushi",
     "email": "atsushithesushi@gmail.com",
     "password": "atsushithesushi"
+  },
+  {
+    "name": "Matheus",
+    "email": "m4theusdev@gmail.com",
+    "password": "test"
   }
 ]
